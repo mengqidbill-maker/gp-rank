@@ -14,9 +14,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .stat{background:#fff;border-radius:12px;padding:10px 20px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .stat .num{font-size:22px;font-weight:700;color:#4f6ef7}
 .stat .lbl{font-size:12px;color:#888;margin-top:2px}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1200px;margin:0 auto}
-@media(max-width:700px){.two-col{grid-template-columns:1fr}}
-.col{display:flex;flex-direction:column;gap:16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1300px;margin:0 auto}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
 .country-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07)}
 .country-header{display:flex;align-items:center;gap:8px;padding:13px 16px;border-bottom:1px solid #f0f0f0;background:#fafafa}
 .flag{font-size:22px}
@@ -51,8 +51,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
   <div class="stat"><div class="num">16</div><div class="lbl">印度尼西亚变化最大</div></div>
   <div class="stat"><div class="num">1</div><div class="lbl">肯尼亚最稳定</div></div>
 </div>
-<div class="two-col">
-  <div class="col">
+<div class="grid">
     <div class="country-card">
       <div class="country-header">
         <span class="flag">🇳🇬</span>
@@ -271,8 +270,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
             </div>
           </div>
         </div></div>
-    </div></div>
-  <div class="col">
+    </div>
     <div class="country-card">
       <div class="country-header">
         <span class="flag">🇮🇳</span>
@@ -660,7 +658,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
           </div>
         </div></div>
     </div></div>
-</div>
 <div class="footer">HiAgent · 数据来源：点点数据 app.diandian.com</div>
 </body>
 </html>
