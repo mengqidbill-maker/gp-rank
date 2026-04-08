@@ -14,7 +14,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .stat{background:#fff;border-radius:12px;padding:10px 20px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .stat .num{font-size:22px;font-weight:700;color:#4f6ef7}
 .stat .lbl{font-size:12px;color:#888;margin-top:2px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px;max-width:1200px;margin:0 auto}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1200px;margin:0 auto}
+@media(max-width:700px){.two-col{grid-template-columns:1fr}}
+.col{display:flex;flex-direction:column;gap:16px}
 .country-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07)}
 .country-header{display:flex;align-items:center;gap:8px;padding:13px 16px;border-bottom:1px solid #f0f0f0;background:#fafafa}
 .flag{font-size:22px}
@@ -49,64 +51,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
   <div class="stat"><div class="num">16</div><div class="lbl">印度尼西亚变化最大</div></div>
   <div class="stat"><div class="num">1</div><div class="lbl">肯尼亚最稳定</div></div>
 </div>
-<div class="grid">
-    <div class="country-card">
-      <div class="country-header">
-        <span class="flag">🇮🇳</span>
-        <span class="country-name">印度</span>
-        <span class="count-badge">4款新上榜</span>
-        <span class="compare">vs 2026-04-03</span>
-      </div>
-      <div class="game-list">
-        <div class="game-item">
-          <div class="rank ">#43</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/L1GNW7d--FSxB6dcS09mgBqtA2ZUddb_DPZj3NKspIBXKtqNWFLX0CWLXdN0kQPM_g" alt="भारतीय शादी: ड्रैसअप मेकअप"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.gameiavo.wedding.makeup.fashion.stylist" target="_blank" rel="noopener">भारतीय शादी: ड्रैसअप मेकअप</a></div>
-            <div class="meta">
-              <span class="tag">休闲</span>
-              <span class="dev">GameiAvo</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#45</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/urq7M2QD9-AVt3AMQn1dHl0wSfWItoPExLsnu7BAqlfvXlikR3kVrHr7LarPFGhscLM" alt="Bus Simulator Indonesia"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.maleo.bussimulatorid" target="_blank" rel="noopener">Bus Simulator Indonesia</a></div>
-            <div class="meta">
-              <span class="tag">模拟</span>
-              <span class="dev">Maleo</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#49</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/NRovxU1rnnI2BzDw989gmkSb8DOnEmgybKJysHKE4-5WSWonNXFwGJGDXMppfxHBkI4" alt="Stunt Bike Extreme"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.hyperkani.trialbike" target="_blank" rel="noopener">Stunt Bike Extreme</a></div>
-            <div class="meta">
-              <span class="tag">竞速</span>
-              <span class="dev">Hyperkani</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#50</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/RdZNKDuKFKe-QOf4M6_dCZWfc1owXJQ3HI5QuGpV8fsHWwtt9LBn2VwvWJdfGr-FfWc" alt="2 Player games : the Challenge"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.JindoBlu.TwoPlayerGamesChallenge" target="_blank" rel="noopener">2 Player games : the Challenge</a></div>
-            <div class="meta">
-              <span class="tag">街机</span>
-              <span class="dev">JindoBlu</span>
-            </div>
-          </div>
-        </div></div>
-    </div>
+<div class="two-col">
+  <div class="col">
     <div class="country-card">
       <div class="country-header">
         <span class="flag">🇳🇬</span>
@@ -148,6 +94,27 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
             <div class="meta">
               <span class="tag">角色扮演</span>
               <span class="dev">Lockwood Publishing Ltd</span>
+            </div>
+          </div>
+        </div></div>
+    </div>
+    <div class="country-card">
+      <div class="country-header">
+        <span class="flag">🇰🇪</span>
+        <span class="country-name">肯尼亚</span>
+        <span class="count-badge">1款新上榜</span>
+        <span class="compare">vs 2026-04-07</span>
+      </div>
+      <div class="game-list">
+        <div class="game-item">
+          <div class="rank ">#49</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/pIbpgw4g7bQIe6LWkHM1HUvmxG6RUw6SwAam31yRJ20V2QlJ_6adBrLcy0O2iUPiGHk" alt="Flight Simulator Airplane Game"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.flightsimulator.airplane3d.airportsimulator.airplane.flying" target="_blank" rel="noopener">Flight Simulator Airplane Game</a></div>
+            <div class="meta">
+              <span class="tag">模拟</span>
+              <span class="dev">HiveMind Games Inc.</span>
             </div>
           </div>
         </div></div>
@@ -304,153 +271,61 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
             </div>
           </div>
         </div></div>
-    </div>
+    </div></div>
+  <div class="col">
     <div class="country-card">
       <div class="country-header">
-        <span class="flag">🇰🇪</span>
-        <span class="country-name">肯尼亚</span>
-        <span class="count-badge">1款新上榜</span>
-        <span class="compare">vs 2026-04-07</span>
-      </div>
-      <div class="game-list">
-        <div class="game-item">
-          <div class="rank ">#49</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/pIbpgw4g7bQIe6LWkHM1HUvmxG6RUw6SwAam31yRJ20V2QlJ_6adBrLcy0O2iUPiGHk" alt="Flight Simulator Airplane Game"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.flightsimulator.airplane3d.airportsimulator.airplane.flying" target="_blank" rel="noopener">Flight Simulator Airplane Game</a></div>
-            <div class="meta">
-              <span class="tag">模拟</span>
-              <span class="dev">HiveMind Games Inc.</span>
-            </div>
-          </div>
-        </div></div>
-    </div>
-    <div class="country-card">
-      <div class="country-header">
-        <span class="flag">🇵🇭</span>
-        <span class="country-name">菲律宾</span>
-        <span class="count-badge">10款新上榜</span>
+        <span class="flag">🇮🇳</span>
+        <span class="country-name">印度</span>
+        <span class="count-badge">4款新上榜</span>
         <span class="compare">vs 2026-04-03</span>
       </div>
       <div class="game-list">
         <div class="game-item">
-          <div class="rank ">#25</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/f3szQ-tBQ5FVtiO2hwnJ6Gg4LbckQ9qKD099oiFqlvDo78uaD85Zn9G4o-W9390XnQ" alt="Arrows – Puzzle Escape"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.ecffri.arrows" target="_blank" rel="noopener">Arrows – Puzzle Escape</a></div>
-            <div class="meta">
-              <span class="tag">益智</span>
-              <span class="dev">Lessmore GmbH</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#28</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/c_xEr6IgF_GxD9xgeVRSWYAKd6B4J1_Pf9w4Mr-ig2pDXyfOVkTZkZQuRI_VOs7KALLU53lPju3lVgDBO1JEQQ" alt="ZooTone: Animal Voice Fun"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.animal.voicezoo.games" target="_blank" rel="noopener">ZooTone: Animal Voice Fun</a></div>
-            <div class="meta">
-              <span class="tag">休闲</span>
-              <span class="dev">JUP Game Studio</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#34</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/QvQHWzQ2AUdSvIu4HpVgg2j_BfiAHD5IDXazFrcm6j9FHG3Q2993oTJBiIL_QK6KrH7m" alt="Music Piano 5: Demon Piano"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.adventure.piano.musictiles" target="_blank" rel="noopener">Music Piano 5: Demon Piano</a></div>
-            <div class="meta">
-              <span class="tag">休闲</span>
-              <span class="dev">HyperMusic</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#42</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/4TTE3VCAUciSPOnMo5dWn3Y1tvuiZNns7dT1q5_msDzip_UY07RbzmnoYyKnbDFBHw" alt="Colour by Number：Paint Games"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.tfgco.apps.coloring.free.color.by.number" target="_blank" rel="noopener">Colour by Number：Paint Games</a></div>
-            <div class="meta">
-              <span class="tag">桌面和棋类</span>
-              <span class="dev">Wildlife Studios</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
           <div class="rank ">#43</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/YFLQtYRR62ZqKCltjqkRLyQ-PBaz1f_1t-5AEF4lUc7oyRtLSx8KwESSK4LJkrot_El5JHFgK_fShh9p3Xyn-Q" alt="Block World - Craft City"
+          <img class="icon" src="https://gp-cdn.diandian.com/L1GNW7d--FSxB6dcS09mgBqtA2ZUddb_DPZj3NKspIBXKtqNWFLX0CWLXdN0kQPM_g" alt="भारतीय शादी: ड्रैसअप मेकअप"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
           <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.diamond.city.house.best.building.craft.vip" target="_blank" rel="noopener">Block World - Craft City</a></div>
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.gameiavo.wedding.makeup.fashion.stylist" target="_blank" rel="noopener">भारतीय शादी: ड्रैसअप मेकअप</a></div>
+            <div class="meta">
+              <span class="tag">休闲</span>
+              <span class="dev">GameiAvo</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#45</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/urq7M2QD9-AVt3AMQn1dHl0wSfWItoPExLsnu7BAqlfvXlikR3kVrHr7LarPFGhscLM" alt="Bus Simulator Indonesia"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.maleo.bussimulatorid" target="_blank" rel="noopener">Bus Simulator Indonesia</a></div>
             <div class="meta">
               <span class="tag">模拟</span>
-              <span class="dev">Patane Global</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#44</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/2Y48rclapQRrnExBTlepLFlGm6rvQ-rmxC_l25ppSJ1kcbg84NVneMEsaQgxcJbsicIFZq7svT-IWycVvrP4" alt="8 Ball Kick"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.billiardsgame.ballking" target="_blank" rel="noopener">8 Ball Kick</a></div>
-            <div class="meta">
-              <span class="tag">益智</span>
-              <span class="dev">execl marocco</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#46</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/IdvT5_Z6aQ-7PnBTsO0pzZbn5nLMAQO5Mr5ZCVC76so62O5gW_argUQCC4fTXs-Y1cgyrUmfWsGDDnDOjlEckg" alt="Block Craft - Building World"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.monster.world.craft.building.box.diamond.tree" target="_blank" rel="noopener">Block Craft - Building World</a></div>
-            <div class="meta">
-              <span class="tag">模拟</span>
-              <span class="dev">Patane Global</span>
-            </div>
-          </div>
-        </div>
-        <div class="game-item">
-          <div class="rank ">#47</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/stjTItfEyoYW6XankxkYMzHl29ydCcWs-iA-jMXsEmQr9or8GmJw0Cdyyh02aoY47mWv" alt="Sudoku Master!"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
-          <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.mathbrain.sudoku" target="_blank" rel="noopener">Sudoku Master!</a></div>
-            <div class="meta">
-              <span class="tag">益智</span>
-              <span class="dev">HungryStudio</span>
+              <span class="dev">Maleo</span>
             </div>
           </div>
         </div>
         <div class="game-item">
           <div class="rank ">#49</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/NBGbFnv5rrm9rLT6t6vCC5LcxGn3TLGwtgI7wO8i61E04CwWD5_wskBSNF65MCf2GhKjlumetQ87nkNZp74f" alt="Tile Clear - Puzzle Game"
+          <img class="icon" src="https://gp-cdn.diandian.com/NRovxU1rnnI2BzDw989gmkSb8DOnEmgybKJysHKE4-5WSWonNXFwGJGDXMppfxHBkI4" alt="Stunt Bike Extreme"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
           <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.cedargames.tileclear" target="_blank" rel="noopener">Tile Clear - Puzzle Game</a></div>
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.hyperkani.trialbike" target="_blank" rel="noopener">Stunt Bike Extreme</a></div>
             <div class="meta">
-              <span class="tag">益智</span>
-              <span class="dev">Cedar Games Studio</span>
+              <span class="tag">竞速</span>
+              <span class="dev">Hyperkani</span>
             </div>
           </div>
         </div>
         <div class="game-item">
           <div class="rank ">#50</div>
-          <img class="icon" src="https://gp-cdn.diandian.com/l8bbDAllrsTmKIxnT3NClL710FhbfSp4MuBtB7wtYGtu49ZCpEDWjU9uneNy86-9sQPY" alt="Cryptogram: Word Logic Puzzles"
+          <img class="icon" src="https://gp-cdn.diandian.com/RdZNKDuKFKe-QOf4M6_dCZWfc1owXJQ3HI5QuGpV8fsHWwtt9LBn2VwvWJdfGr-FfWc" alt="2 Player games : the Challenge"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
           <div class="info">
-            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.crypt.gram.puzz" target="_blank" rel="noopener">Cryptogram: Word Logic Puzzles</a></div>
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.JindoBlu.TwoPlayerGamesChallenge" target="_blank" rel="noopener">2 Player games : the Challenge</a></div>
             <div class="meta">
-              <span class="tag">文字</span>
-              <span class="dev">Gismart</span>
+              <span class="tag">街机</span>
+              <span class="dev">JindoBlu</span>
             </div>
           </div>
         </div></div>
@@ -655,7 +530,137 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
             </div>
           </div>
         </div></div>
+    </div>
+    <div class="country-card">
+      <div class="country-header">
+        <span class="flag">🇵🇭</span>
+        <span class="country-name">菲律宾</span>
+        <span class="count-badge">10款新上榜</span>
+        <span class="compare">vs 2026-04-03</span>
+      </div>
+      <div class="game-list">
+        <div class="game-item">
+          <div class="rank ">#25</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/f3szQ-tBQ5FVtiO2hwnJ6Gg4LbckQ9qKD099oiFqlvDo78uaD85Zn9G4o-W9390XnQ" alt="Arrows – Puzzle Escape"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.ecffri.arrows" target="_blank" rel="noopener">Arrows – Puzzle Escape</a></div>
+            <div class="meta">
+              <span class="tag">益智</span>
+              <span class="dev">Lessmore GmbH</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#28</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/c_xEr6IgF_GxD9xgeVRSWYAKd6B4J1_Pf9w4Mr-ig2pDXyfOVkTZkZQuRI_VOs7KALLU53lPju3lVgDBO1JEQQ" alt="ZooTone: Animal Voice Fun"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.animal.voicezoo.games" target="_blank" rel="noopener">ZooTone: Animal Voice Fun</a></div>
+            <div class="meta">
+              <span class="tag">休闲</span>
+              <span class="dev">JUP Game Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#34</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/QvQHWzQ2AUdSvIu4HpVgg2j_BfiAHD5IDXazFrcm6j9FHG3Q2993oTJBiIL_QK6KrH7m" alt="Music Piano 5: Demon Piano"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.adventure.piano.musictiles" target="_blank" rel="noopener">Music Piano 5: Demon Piano</a></div>
+            <div class="meta">
+              <span class="tag">休闲</span>
+              <span class="dev">HyperMusic</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#42</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/4TTE3VCAUciSPOnMo5dWn3Y1tvuiZNns7dT1q5_msDzip_UY07RbzmnoYyKnbDFBHw" alt="Colour by Number：Paint Games"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.tfgco.apps.coloring.free.color.by.number" target="_blank" rel="noopener">Colour by Number：Paint Games</a></div>
+            <div class="meta">
+              <span class="tag">桌面和棋类</span>
+              <span class="dev">Wildlife Studios</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#43</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/YFLQtYRR62ZqKCltjqkRLyQ-PBaz1f_1t-5AEF4lUc7oyRtLSx8KwESSK4LJkrot_El5JHFgK_fShh9p3Xyn-Q" alt="Block World - Craft City"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.diamond.city.house.best.building.craft.vip" target="_blank" rel="noopener">Block World - Craft City</a></div>
+            <div class="meta">
+              <span class="tag">模拟</span>
+              <span class="dev">Patane Global</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#44</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/2Y48rclapQRrnExBTlepLFlGm6rvQ-rmxC_l25ppSJ1kcbg84NVneMEsaQgxcJbsicIFZq7svT-IWycVvrP4" alt="8 Ball Kick"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.billiardsgame.ballking" target="_blank" rel="noopener">8 Ball Kick</a></div>
+            <div class="meta">
+              <span class="tag">益智</span>
+              <span class="dev">execl marocco</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#46</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/IdvT5_Z6aQ-7PnBTsO0pzZbn5nLMAQO5Mr5ZCVC76so62O5gW_argUQCC4fTXs-Y1cgyrUmfWsGDDnDOjlEckg" alt="Block Craft - Building World"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.monster.world.craft.building.box.diamond.tree" target="_blank" rel="noopener">Block Craft - Building World</a></div>
+            <div class="meta">
+              <span class="tag">模拟</span>
+              <span class="dev">Patane Global</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#47</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/stjTItfEyoYW6XankxkYMzHl29ydCcWs-iA-jMXsEmQr9or8GmJw0Cdyyh02aoY47mWv" alt="Sudoku Master!"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.mathbrain.sudoku" target="_blank" rel="noopener">Sudoku Master!</a></div>
+            <div class="meta">
+              <span class="tag">益智</span>
+              <span class="dev">HungryStudio</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#49</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/NBGbFnv5rrm9rLT6t6vCC5LcxGn3TLGwtgI7wO8i61E04CwWD5_wskBSNF65MCf2GhKjlumetQ87nkNZp74f" alt="Tile Clear - Puzzle Game"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.cedargames.tileclear" target="_blank" rel="noopener">Tile Clear - Puzzle Game</a></div>
+            <div class="meta">
+              <span class="tag">益智</span>
+              <span class="dev">Cedar Games Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="rank ">#50</div>
+          <img class="icon" src="https://gp-cdn.diandian.com/l8bbDAllrsTmKIxnT3NClL710FhbfSp4MuBtB7wtYGtu49ZCpEDWjU9uneNy86-9sQPY" alt="Cryptogram: Word Logic Puzzles"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22%3E%3Crect width=%2248%22 height=%2248%22 rx=%2212%22 fill=%22%23e8eaff%22/%3E%3Ctext x=%2224%22 y=%2231%22 text-anchor=%22middle%22 font-size=%2222%22%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E'">
+          <div class="info">
+            <div class="name"><a href="https://play.google.com/store/apps/details?id=com.crypt.gram.puzz" target="_blank" rel="noopener">Cryptogram: Word Logic Puzzles</a></div>
+            <div class="meta">
+              <span class="tag">文字</span>
+              <span class="dev">Gismart</span>
+            </div>
+          </div>
+        </div></div>
     </div></div>
+</div>
 <div class="footer">HiAgent · 数据来源：点点数据 app.diandian.com</div>
 </body>
 </html>
